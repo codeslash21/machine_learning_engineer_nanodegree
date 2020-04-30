@@ -7,6 +7,7 @@ Here are other usefull software practices -
   * Ensure readablity
   * Check standards are met.
   * Share knowledge among teams.
+  
 During code reviews we have to check the followings -
   - Is the code clean and modular?
     - Can I understand the code easily?
@@ -35,7 +36,7 @@ During code reviews we have to check the followings -
     - Do they include all relevant and useful information?
     - Do they use the appropriate logging level?
 
-
+[Python Code linter](https://www.pylint.org/) - This can be used for code reviews to save time.
 
 ## Useful Terms:
 
