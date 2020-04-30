@@ -16,4 +16,11 @@
 * [pytest](https://docs.pytest.org/en/latest/getting-started.html)
 * [pytest configuration](https://docs.pytest.org/en/latest/customize.html)
 
+* Test Driven Development:
+    - [Data Science TDD](https://www.linkedin.com/pulse/data-science-test-driven-development-sam-savage/)
+    - [TDD for Data Science](http://engineering.pivotal.io/post/test-driven-development-for-data-science/)
+    - [TDD is Essential for Good Data Science Here's Why](https://medium.com/uk-hydrographic-office/test-driven-development-is-essential-for-good-data-science-heres-why-db7975a03a44)
+    - [Testing Your Code (general python TDD)](https://docs.python-guide.org/writing/tests/)
+    
+
 
