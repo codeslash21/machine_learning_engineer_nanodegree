@@ -27,4 +27,20 @@
     - [Code Review guide](https://github.com/lyst/MakingLyst/tree/master/code-reviews)
     - [Code Review best practice](https://www.kevinlondon.com/2015/05/05/code-review-best-practices.html)
     
+* Python OOP:
+    - [class methods, instance methods, and static methods ](https://realpython.com/instance-class-and-static-methods-demystified/)
+    - [Python decorators ](https://realpython.com/primer-on-python-decorators/)
+    - [multiple inheritance, mixins ](https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556)
+    - [class attributes vs instance attributes](https://www.python-course.eu/python3_class_and_instance_attributes.php)
+    
+    
+    
+    
+    
+    
+    
+* Others:
+    - [Launch Virtual Machine on CLoud](https://aws.amazon.com/getting-started/hands-on/launch-a-virtual-machine/)
+    - [Linux and MacOs are related](https://www.quora.com/Is-macOS-essentially-built-on-top-of-Linux)
+    
 
