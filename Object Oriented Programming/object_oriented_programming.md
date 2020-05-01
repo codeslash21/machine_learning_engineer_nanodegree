@@ -15,3 +15,5 @@
 * **Access Attributes:** Accessing attributes directly would be frowned upon in many other languages but not in Python. Instead, the general object-oriented programming convention is to use methods to access attributes or change attribute values. These methods are called set and get methods or setter and getter methods. A get method is for obtaining an attribute value. A set method is for changing an attribute value. Though Python is looser in case of OOP, python allows to access and modify the attribute's value directly.
 
 * **Inheritance:** Inheritance makes code easier to maintain since you can update a parent class once rather than updating all of the children. If a class inherited from a class then adding methods or attributes to that parent class will be inherited to the children classes autometically. Updates to a parent class autometically trickle down to its children.
+
+* **Module:** Python Module is a python file that contains a collection of functions, classes and or global variables. Modules can be used in different Python applications. A package is a collections of modules.
