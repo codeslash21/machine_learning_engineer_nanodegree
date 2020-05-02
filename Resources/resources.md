@@ -33,6 +33,8 @@
     - [multiple inheritance, mixins ](https://easyaspython.com/mixins-for-fun-and-profit-cb9962760556)
     - [class attributes vs instance attributes](https://www.python-course.eu/python3_class_and_instance_attributes.php)
     
+* Distributing Package:
+    - [tutorial on distributing packages.](https://packaging.python.org/tutorials/packaging-projects/)
     
     
     
