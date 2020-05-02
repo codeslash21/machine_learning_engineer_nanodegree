@@ -16,7 +16,9 @@
 
 * **Inheritance:** Inheritance makes code easier to maintain since you can update a parent class once rather than updating all of the children. If a class inherited from a class then adding methods or attributes to that parent class will be inherited to the children classes autometically. Updates to a parent class autometically trickle down to its children.
 
-* **Module:** Python Module is a python file that contains a collection of functions, classes and or global variables. Modules can be used in different Python applications. A package is a collections of modules.
+* **Module:** Python Module is a python file that contains a collection of functions, classes and or global variables. Modules can be used in different Python applications.
+
+* **Package:**  A package is a collections of modules. Every package contains `__init__.py` file. this file tells python that this folder contains package and help us to install package usinf `pip` command.
 
 * **pip:** Pip is a Python package manager that helps with installing and uninstalling Python packages. You might have used pip to install packages using the command line: pip install numpy. When you execute a command like pip install numpy, pip will download the package from a Python package repository called [PyPi](https://pypi.org/)
 
@@ -28,4 +30,4 @@
   * **Conda:** Conda does two things: manages packages and manages environments. As an environment manager, conda allows you to create silo-ed Python installations. With an package manager, you can install packages on your computer without affecting your main Python installation. Conda was invented because pip could not handle data science packages that depended on libraries outside of Python. To install packages in caonda environment locally using `pip` one has to install pip in the conda environment first.
   * **pip and Venv:** There are other environmental managers and package managers besides conda. For example, venv is an environment manager that comes pre-installed with Python 3. Pip is a package manager.
     - `packagename.__file__` To see where the package is installed.
-    - `pip install .` Pip look for setup.py file to install a package that is described in the setup.py file. Every package contains setup.py file with metadata about the package.
+    - `pip install .` Pip look for setup.py file to install a package that is described in the setup.py file. Every package contains `setup.py` file in the same directory where the package is, with metadata about the package.
