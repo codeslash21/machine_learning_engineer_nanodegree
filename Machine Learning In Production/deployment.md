@@ -26,3 +26,7 @@ There are three primary components of deployments. These are -
       **2.** Reduced Operational Governance Control (over cloud resources).</br>
       **3.** Limited Portability Between Cloud Providers.</br>
       **4.** Multi-regional Compliance and Legal Issues.</br>
+
+
+#### NOTE:
+  - Cloud Computing can be used for any or all parts of the machine learning process.
