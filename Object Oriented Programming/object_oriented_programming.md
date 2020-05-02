@@ -29,5 +29,16 @@
 * **Python Environments:** There are two different Python environment managers: conda and venv. You can create virtual environments with either one.
   * **Conda:** Conda does two things: manages packages and manages environments. As an environment manager, conda allows you to create silo-ed Python installations. With an package manager, you can install packages on your computer without affecting your main Python installation. Conda was invented because pip could not handle data science packages that depended on libraries outside of Python. To install packages in caonda environment locally using `pip` one has to install pip in the conda environment first.
   * **pip and Venv:** There are other environmental managers and package managers besides conda. For example, venv is an environment manager that comes pre-installed with Python 3. Pip is a package manager.
+  
     - `packagename.__file__` To see where the package is installed.
     - `pip install .` Pip look for setup.py file to install a package that is described in the setup.py file. Every package contains `setup.py` file in the same directory where the package is, with metadata about the package.
+    - `pip install --upgrade .` To upgrade the package that is described in `setup.py` file.
+    
+* **Upload Python Package To PyPi:** To upload a package necessary steps should be followed.
+  - Package folder should contains `__init__.py`, `README`, `LICENSE` and `setup.cfg` files. `setup.cfg` files contains metadata about the `README` file which contain the description about the package.
+  - `python setup.py sdist` To generate required folders to upload a package. Run this command to the directory where package folder exists. In this directory `setup.py` file exists which contains metadata about package.
+  - `pip install twine` To install `twine` package, its required for uploading packages to PyPi.
+  - `twine upload --repository-url https://test.pypi.org/legacy/ dist/*` To upload the package to the PyPi test repository. Run this command where `dist` folder exists and that is the direcotry where package exists. To upload one has to register to PyPi. Basically this command upload `dist/*` means the `tar.gz` file that only exists in the `dist` folder, `tar.gz` file contains the package.
+  - `tar.gz` This is an sdist, contains the files needed to compile and install a Python package. A whl file, ie a built distribution, only needs to be copied to the proper place for installation.
+  - `twine upload dist/*` To upload the package to the regular PyPi directory. After uploading package to the regular directory one can install the package using pip command.
+  
