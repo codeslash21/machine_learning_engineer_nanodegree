@@ -17,3 +17,9 @@
 * **Inheritance:** Inheritance makes code easier to maintain since you can update a parent class once rather than updating all of the children. If a class inherited from a class then adding methods or attributes to that parent class will be inherited to the children classes autometically. Updates to a parent class autometically trickle down to its children.
 
 * **Module:** Python Module is a python file that contains a collection of functions, classes and or global variables. Modules can be used in different Python applications. A package is a collections of modules.
+
+* **pip:** Pip is a Python package manager that helps with installing and uninstalling Python packages. You might have used pip to install packages using the command line: pip install numpy. When you execute a command like pip install numpy, pip will download the package from a Python package repository called [PyPi](https://pypi.org/)
+
+* **Object-Oriented Programming and Python Packages:** Most if not all of the popular Python packages take advantage of object-oriented programming for a few reasons:
+  * Object-oriented programs are relatively easy to expand especially because of inheritance
+  * Object-oriented programs obscure functionality from the user. Consider scipy packages. You don't need to know how the actual code works in order to use its classes and methods.
