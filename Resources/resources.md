@@ -36,7 +36,9 @@
 * Distributing Package:
     - [tutorial on distributing packages.](https://packaging.python.org/tutorials/packaging-projects/)
     
-    
+* Machine Learning Workflow:
+    - [GCP](https://cloud.google.com/ai-platform/docs/ml-solutions-overview)
+    - [AWS](https://docs.aws.amazon.com/sagemaker/latest/dg/how-it-works-mlconcepts.html)
     
     
     
