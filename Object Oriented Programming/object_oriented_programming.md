@@ -23,3 +23,9 @@
 * **Object-Oriented Programming and Python Packages:** Most if not all of the popular Python packages take advantage of object-oriented programming for a few reasons:
   * Object-oriented programs are relatively easy to expand especially because of inheritance
   * Object-oriented programs obscure functionality from the user. Consider scipy packages. You don't need to know how the actual code works in order to use its classes and methods.
+
+* **Python Environments:** There are two different Python environment managers: conda and venv. You can create virtual environments with either one.
+  * **Conda:** Conda does two things: manages packages and manages environments. As an environment manager, conda allows you to create silo-ed Python installations. With an package manager, you can install packages on your computer without affecting your main Python installation. Conda was invented because pip could not handle data science packages that depended on libraries outside of Python. To install packages in caonda environment locally using `pip` one has to install pip in the conda environment first.
+  * **pip and Venv:** There are other environmental managers and package managers besides conda. For example, venv is an environment manager that comes pre-installed with Python 3. Pip is a package manager.
+    - `packagename.__file__` To see where the package is installed.
+    - `pip install .` Pip look for setup.py file to install a package that is described in the setup.py file. Every package contains setup.py file with metadata about the package.
