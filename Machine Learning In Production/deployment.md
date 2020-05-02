@@ -5,4 +5,5 @@ There are three primary components of deployments. These are -
   > Modeling or model your data.
   > Deployment or deploy your model.
   
+  </br>
 <img src="../Images/ml-concepts-10.png", width="500"/>
