@@ -90,3 +90,69 @@ This prediction is then presented to the application user through the applicatio
 As we learn more about RESTful API, realize that it's the application’s responsibility:
   - To format the user’s data in a way that can be easily put into the HTTP request message and used by the model.
   - To translate the predictions from the HTTP response message in a way that’s easy for the application user’s to understand.
+
+
+### Characteristics of Modeling:
+  - **Hyperparameters:**
+In machine learning, a hyperparameter is a parameter whose value cannot be estimated from the data.
+
+    - Specifically, a hyperparameter is not directly learned through the estimators; therefore, their value must be set by the model developer.
+    - This means that hyperparameter tuning for optimization is an important part of model training.
+    - Often cloud platform machine learning services provide methods that allow for automatic hyperparameter tuning for use with model training.
+  </br>
+  If the machine learning platform fails to offer an automatic hyperparameter option, one option is to use methods from scikit-learn Python library for hyperparameter tuning. Scikit-learn is a free machine learning Python library that includes methods that help with hyperparameter tuning.
+  
+</br>
+<img src="../Images/hyperparameter.png", width="500"/>
+
+### Characteristics of Deployment:
+  - **Model Versioning:**
+One characteristic of deployment is the version of the model that is to be deployed.
+
+    - Besides saving the model version as a part of a model’s metadata in a database, the deployment platform should allow one to indicate a deployed model’s version.</br>
+This will make it easier to maintain, monitor, and update the deployed model.
+
+  - **Model Monitoring:**
+Another characteristic of deployment is the ability to easily monitor your deployed models.
+
+    - Once a model is deployed you will want to make certain it continues to meet its performance metrics; otherwise, the application may need to be updated with a better performing model.
+    
+  - **Model Updating and Routing:**
+The ability to easily update your deployed model is another characteristic of deployment.
+
+    - If a deployed model is failing to meet its performance metrics, it's likely you will need to update this model.</br>
+    
+If there's been a fundamental change in the data that’s being input into the model for predictions; you'll want to collect this input data to be used to update the model.
+
+    - The deployment platform should support routing differing proportions of user requests to the deployed models, to allow comparison of performance between the deployed model variants.
+    
+  **Routing** in this way allows for a test of a model performance as compared to other model variants.
+  
+  - **Model Predictions:**
+Another characteristic of deployment is the type of predictions provided by your deployed model. There are two common types of predictions:
+
+    - **On-demand predictions:** On-demand predictions might also be called:
+      - online,
+      - real-time, or
+      - synchronous predictions </br>
+      
+      With these type of predictions, one expects:
+        - a low latency of response to each prediction request,
+        - but allows for possibility high variability in request volume.
+        
+    - **Batch predictions:** Batch predictions might also be called:
+      - asynchronous, or
+      - batch-based predictions. </br>
+      
+      With these type of predictions, one expects:
+        - high volume of requests with more periodic submissions
+        - so latency won’t be an issue.
+        
+    - **NOTE:**
+      - On-demand predictions are commonly used to provide customers, users, or employees with real-time, online responses based upon a deployed model. Thinking back on our magic eight ball web application example, users of our web application would be making on-demand prediction requests.
+      - Batch predictions are commonly used to help make business decisions. For example, imagine a business uses a complex model to predict customer satisfaction across a number of their products and they need these estimates for a weekly report. This would require processing customer data through a batch prediction request on a weekly basis.
+      
+      </br>
+      
+</br>
+<img src="../Images/deployment-chars.png", width="500"/>
