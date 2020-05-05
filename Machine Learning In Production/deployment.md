@@ -126,7 +126,7 @@ If there's been a fundamental change in the data that’s being input into the m
 
     - The deployment platform should support routing differing proportions of user requests to the deployed models, to allow comparison of performance between the deployed model variants.
     
-  **Routing** in this way allows for a test of a model performance as compared to other model variants.
+    - **Routing** in this way allows for a test of a model performance as compared to other model variants.
   
   - **Model Predictions:**
 Another characteristic of deployment is the type of predictions provided by your deployed model. There are two common types of predictions:
