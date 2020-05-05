@@ -41,3 +41,14 @@ Followings are the three steps to deploy a model using Amazon's Sagemaker -
 
 #### NOTE:
   - Cloud Computing can be used for any or all parts of the machine learning process.
+  - **Environment** is the computational system that host the application. Types of the environment depends on the types of users. With examples, if we are providing predictions to the users who are customer then its called `production environment`, and if the users are emplyees testing the applicatin it would be the `test environment`.
+  - **Endpoint:** Application communicates with the model through an interface to the model called endpoint.
+    - Allows the application to send user data to the model and
+    - Receives predictions back from the model based upon that user data.
+   One way to think of the endpoint that acts as this interface, is to think of a Python program where:
+    - the endpoint itself is like a function call
+    - the function itself would be the model and
+    - the Python program is the application.
+    
+</br>
+  <img src="../Images/endpointprogram-1.png", width="500"/>
