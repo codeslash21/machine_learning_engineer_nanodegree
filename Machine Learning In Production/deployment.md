@@ -26,6 +26,16 @@ There are three primary components of deployments. These are -
       **2.** Reduced Operational Governance Control (over cloud resources).</br>
       **3.** Limited Portability Between Cloud Providers.</br>
       **4.** Multi-regional Compliance and Legal Issues.</br>
+      
+### Paths to Deployment:
+Followings are the steps to deploy a model using Amazon's Sagemaker -
+  - 1. **Python model is recoded into the programming language of the production environment:** The first method which involves recoding the Python model into the language of the production environment, often Java or C++. This method is rarely used anymore because it takes time to recode, test, and validate the model that provides the same predictions as the original.
+  - 2. **Model is coded in Predictive Model Markup Language (PMML) or Portable Format Analytics (PFA):** The second method is to code the model in Predictive Model Markup Language (PMML) or Portable Format for Analytics (PFA), which are two complementary standards that simplify moving predictive models to deployment into a production environment. The Data Mining Group developed both PMML and PFA to provide vendor-neutral executable model specifications for certain predictive models used by data mining and machine learning.
+  - 3. **Python model is converted into a format that can be used in the production environment:** The third method is to build a Python model and use libraries and methods that convert the model into code that can be used in the production environment. Specifically most popular machine learning software frameworks, like PyTorch, TensorFlow, SciKit-Learn, have methods that will convert Python models into intermediate standard format, like ONNX (Open Neural Network Exchange format). This intermediate standard format then can be converted into the software native to the production environment.
+  
+<img src="../Images/mlworkflow-devops-1.png", width="500"/>
+
+
 
 
 #### NOTE:
