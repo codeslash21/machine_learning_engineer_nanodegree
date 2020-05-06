@@ -1,5 +1,8 @@
 
 # AWS Sagemaker:
+[Amazon Sagemaker endpoints and quotas](https://docs.aws.amazon.com/general/latest/gr/sagemaker.html)
+
+[AWS Support center](https://console.aws.amazon.com/support/home?#/)
 
 ### The Amazon Sagemaker provides the following tools:
   - Ground Truth - To label the jobs, datasets, and workforces
