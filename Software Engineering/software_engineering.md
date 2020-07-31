@@ -51,8 +51,14 @@ Knowing how to write code that runs efficiently is another essential skill in so
 Helpful for clarifying complex parts of code, making your code easier to navigate, and quickly conveying how and why different components of your program are used.
 Several types of documentation can be added at different levels of your program:
   * **In-line Comments - line level:** In-line comments are text following hash symbols throughout your code. They are used to explain parts of your code, and really help future contributors understand your work.
+    - This are useful for clarifing complex code.
+    - Readable code is preferable over having comments to make code readable.
+    
   * **Docstrings - module and function level:** Docstring, or documentation strings, are valuable pieces of documentation that explain the functionality of any function or module in your code. Ideally, each of your functions should always have a docstring.
+    - Docstring explains the purpose of the function or the module.
+    - You can add whatever details you want in docstrings.
+    
   * **Project Documentation - project level:** Project documentation is essential for getting others to understand why and how your code is relevant to them, whether they are potentials users of your project or developers who may contribute to your code. A great first step in project documentation is your README file. It will often be the first interaction most users will have with your project.
   
   
-  
+
